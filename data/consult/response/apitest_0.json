@@ -1,0 +1,60 @@
+{
+  "results" : [ {
+    "gender" : "male",
+    "name" : {
+      "title" : "mr",
+      "first" : "آریا",
+      "last" : "جعفری"
+    },
+    "location" : {
+      "street" : "3476 سباری",
+      "city" : "ساوه",
+      "state" : "آذربایجان غربی",
+      "postcode" : 22356,
+      "coordinates" : {
+        "latitude" : "34.2584",
+        "longitude" : "-61.6699"
+      },
+      "timezone" : {
+        "offset" : "-5:00",
+        "description" : "Eastern Time (US & Canada), Bogota, Lima"
+      }
+    },
+    "email" : "آریا.جعفری@example.com",
+    "login" : {
+      "uuid" : "20455802-d5c0-4d5b-a300-02f41ec6337d",
+      "username" : "angrybear135",
+      "password" : "chester",
+      "salt" : "YvVa2wSl",
+      "md5" : "5b3127bf3a817b9856685fe72c66231d",
+      "sha1" : "b088d91e849de4c103c4c41411bcb9dfee161d87",
+      "sha256" : "88abe0ca6d29fd69503bc171c732d9e9ea85a1dbc7082b0b50341a0735913ccd"
+    },
+    "dob" : {
+      "date" : "1952-08-30T16:43:38Z",
+      "age" : 66
+    },
+    "registered" : {
+      "date" : "2017-09-12T22:29:00Z",
+      "age" : 1
+    },
+    "phone" : "009-84224889",
+    "cell" : "0988-457-5241",
+    "id" : {
+      "name" : "",
+      "value" : null
+    },
+    "picture" : {
+      "large" : "https://randomuser.me/api/portraits/men/26.jpg",
+      "medium" : "https://randomuser.me/api/portraits/med/men/26.jpg",
+      "thumbnail" : "https://randomuser.me/api/portraits/thumb/men/26.jpg"
+    },
+    "nat" : "IR"
+  } ],
+  "info" : {
+    "seed" : "a11c2067a74ccd81",
+    "results" : 1,
+    "page" : 1,
+    "version" : "1.2"
+  }
+}

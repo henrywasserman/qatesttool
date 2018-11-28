@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<results type="array">
+<results>
+<gender type="string">female</gender>
+<name>
+<title type="string">ms</title>
+<first type="string">stella</first>
+<last type="string">mitchelle</last>
+</name>
+<location>
+<street type="string">7471 sunset st</street>
+<city type="string">saginaw</city>
+<state type="string">north carolina</state>
+<postcode type="int">17806</postcode>
+<coordinates>
+<latitude type="string">80.8538</latitude>
+<longitude type="string">38.5688</longitude>
+</coordinates>
+<timezone>
+<offset type="string">+4:30</offset>
+<description type="string">Kabul</description>
+</timezone>
+</location>
+<email type="string">stella.mitchelle@example.com</email>
+<login>
+<uuid type="string">e9babcca-1d8c-46ff-948b-9997bbb75a68</uuid>
+<username type="string">sadmeercat646</username>
+<password type="string">labrador</password>
+<salt type="string">YIWx78vr</salt>
+<md5 type="string">92bcad52e3f181f8430be5dc8b19ffaa</md5>
+<sha1 type="string">c3e436fa7f2d50a5a6328b380a50175a732dfb5a</sha1>
+<sha256 type="string">831646327a21f660b3e674a3cc1a755b27baab8a0ec0bcc40586f9c05745b699</sha256>
+</login>
+<dob>
+<date type="string">1975-08-31T11:56:14Z</date>
+<age type="int">43</age>
+</dob>
+<registered>
+<date type="string">2010-01-30T21:04:17Z</date>
+<age type="int">8</age>
+</registered>
+<phone type="string">(774)-364-5712</phone>
+<cell type="string">(180)-160-4001</cell>
+<id>
+<name type="string">SSN</name>
+<value type="string">000-54-9736</value>
+</id>
+<picture>
+<large type="string">https://randomuser.me/api/portraits/women/71.jpg</large>
+<medium type="string">https://randomuser.me/api/portraits/med/women/71.jpg</medium>
+<thumbnail type="string">https://randomuser.me/api/portraits/thumb/women/71.jpg</thumbnail>
+</picture>
+<nat type="string">US</nat>
+</results>
+</results>
+<info>
+<seed type="string">21c42ce2af0ffe65</seed>
+<results type="int">1</results>
+<page type="int">1</page>
+<version type="string">1.2</version>
+</info>
+</root>

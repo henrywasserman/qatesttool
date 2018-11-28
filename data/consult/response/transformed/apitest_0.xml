@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<results type="array">
+<results>
+<gender type="string">male</gender>
+<name>
+<title type="string">mr</title>
+<first type="string">آریا</first>
+<last type="string">جعفری</last>
+</name>
+<location>
+<street type="string">3476 سباری</street>
+<city type="string">ساوه</city>
+<state type="string">آذربایجان غربی</state>
+<postcode type="int">22356</postcode>
+<coordinates>
+<latitude type="string">34.2584</latitude>
+<longitude type="string">-61.6699</longitude>
+</coordinates>
+<timezone>
+<offset type="string">-5:00</offset>
+<description type="string">Eastern Time (US &amp; Canada), Bogota, Lima</description>
+</timezone>
+</location>
+<email type="string">آریا.جعفری@example.com</email>
+<login>
+<uuid type="string">20455802-d5c0-4d5b-a300-02f41ec6337d</uuid>
+<username type="string">angrybear135</username>
+<password type="string">chester</password>
+<salt type="string">YvVa2wSl</salt>
+<md5 type="string">5b3127bf3a817b9856685fe72c66231d</md5>
+<sha1 type="string">b088d91e849de4c103c4c41411bcb9dfee161d87</sha1>
+<sha256 type="string">88abe0ca6d29fd69503bc171c732d9e9ea85a1dbc7082b0b50341a0735913ccd</sha256>
+</login>
+<dob>
+<date type="string">1952-08-30T16:43:38Z</date>
+<age type="int">66</age>
+</dob>
+<registered>
+<date type="string">2017-09-12T22:29:00Z</date>
+<age type="int">1</age>
+</registered>
+<phone type="string">009-84224889</phone>
+<cell type="string">0988-457-5241</cell>
+<id>
+<name type="string"/>
+<value type="null"/>
+</id>
+<picture>
+<large type="string">https://randomuser.me/api/portraits/men/26.jpg</large>
+<medium type="string">https://randomuser.me/api/portraits/med/men/26.jpg</medium>
+<thumbnail type="string">https://randomuser.me/api/portraits/thumb/men/26.jpg</thumbnail>
+</picture>
+<nat type="string">IR</nat>
+</results>
+</results>
+<info>
+<seed type="string">a11c2067a74ccd81</seed>
+<results type="int">1</results>
+<page type="int">1</page>
+<version type="string">1.2</version>
+</info>
+</root>

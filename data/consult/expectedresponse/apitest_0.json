@@ -1,0 +1,60 @@
+{
+  "results" : [ {
+    "gender" : "female",
+    "name" : {
+      "title" : "ms",
+      "first" : "silke",
+      "last" : "nielsen"
+    },
+    "location" : {
+      "street" : "8106 thistedvej",
+      "city" : "klitmøller",
+      "state" : "nordjylland",
+      "postcode" : 70359,
+      "coordinates" : {
+        "latitude" : "-33.4232",
+        "longitude" : "72.9204"
+      },
+      "timezone" : {
+        "offset" : "+7:00",
+        "description" : "Bangkok, Hanoi, Jakarta"
+      }
+    },
+    "email" : "silke.nielsen@example.com",
+    "login" : {
+      "uuid" : "eabdcd5a-acba-43b9-acfb-c599853838d3",
+      "username" : "sadrabbit419",
+      "password" : "whiteout",
+      "salt" : "WRQmRKNU",
+      "md5" : "abcdb867b430a42e0836532180983ab8",
+      "sha1" : "725e2097e506480c2be54f28758f0262c649b421",
+      "sha256" : "e238b5bc124758e842df67467158a45cf8c679a8c81ff4372b3c965a312ded46"
+    },
+    "dob" : {
+      "date" : "1977-07-28T10:04:34Z",
+      "age" : 41
+    },
+    "registered" : {
+      "date" : "2011-05-24T06:55:18Z",
+      "age" : 7
+    },
+    "phone" : "32515819",
+    "cell" : "46874637",
+    "id" : {
+      "name" : "CPR",
+      "value" : "386559-9495"
+    },
+    "picture" : {
+      "large" : "https://randomuser.me/api/portraits/women/53.jpg",
+      "medium" : "https://randomuser.me/api/portraits/med/women/53.jpg",
+      "thumbnail" : "https://randomuser.me/api/portraits/thumb/women/53.jpg"
+    },
+    "nat" : "DK"
+  } ],
+  "info" : {
+    "seed" : "941209a6668b94df",
+    "results" : 1,
+    "page" : 1,
+    "version" : "1.2"
+  }
+}

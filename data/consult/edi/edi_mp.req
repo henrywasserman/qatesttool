@@ -1,0 +1,3 @@
+TESTCASE edi_to_talend, tests that all edi data makes it into talend
+   EDI_TO_MYSQL data/consult/mp/edi_files/cca-input-message.edi
+   IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date

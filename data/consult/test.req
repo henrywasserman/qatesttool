@@ -1,0 +1,17 @@
+TESTCASE test1, test description
+  RUN_SQL_FROM_FILE data/consult/datadriven/sqlfarm.sql
+
+TESTCASE FirstSQLTestcase, This is the First Sql Testcase
+  RUN_ORACLE_SQL
+    SELECT * FROM SC_BASE.NAME WHERE NAME_LAST = 'SMITH'
+  RUN_SQLSERVER_SQL
+    SELECT TOP 10 Claimno_PFK ,Allowed , Proccode ,
+    Billed , Adjust , ADJCODE , Lineflag , adjrefo FROM dbo.Claim_Details WHERE Lineflag = 'C'
+  COMPARE
+
+TESTCASE Patrick1, first real world testcase
+  RUN_SQLSERVER_SQL
+    SELECT A.CLAIM_ID,Service_From_Date,b.lastchangedate
+    FROM [EncounterDataMart].[MMP].[mmpClaimData] A JOIN [EZCAP_DTS].[dbo].[CLAIM_DETAILS] B ON A.CLAIM_ID = B.CLAIMNO AND
+      A.Claim_Seq_No = B.tblrowid where CLAIM_ENTRY_DATE < '1/1/14'  and b.lastchangedate < '1/1/14'and CCAClaimGroup = 'Medical'
+  COMPARE

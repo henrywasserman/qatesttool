@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="J3F01P1" name="com.xstreamcompare.compare.test_CompareResponses" tests="1" time="0.395" timestamp="2011-09-10T02:07:45">
+
+  <properties>
+
+    <property name="file.encoding.pkg" value="sun.io" />
+
+    <property name="env.PROMPT" value="$P$G" />
+
+    <property name="env.QSI_ROBOT_PYTHON_HOME" value="c:\apps\qsi_robot\python-2.7.1" />
+
+    <property name="env.RoxioCentral" value="C:\Program Files\Common Files\Roxio Shared\10.0\Roxio Central36\" />
+
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_24\jre" />
+
+    <property name="env.VS90COMNTOOLS" value="c:\Program Files\Microsoft Visual Studio 9.0\Common7\Tools\" />
+
+    <property name="env.FTP_PASSIVE" value="1" />
+
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_24\jre\lib\endorsed" />
+
+    <property name="env.USERNAME" value="hwasserm" />
+
+    <property name="src.dir" value="src" />
+
+    <property name="sun.os.patch.level" value="" />
+
+    <property name="env.REGIONLOC" value="US" />
+
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+
+    <property name="env.COMPUTERNAME" value="J3F01P1" />
+
+    <property name="env.=C:" value="C:\navteq-test\TestingTools\XStreamCompare" />
+
+    <property name="java.version" value="1.6.0_24" />
+
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+
+    <property name="env.USERPROFILE" value="C:\Users\hwasserm" />
+
+    <property name="ant.project.invoked-targets" value="compare" />
+
+    <property name="env.SystemRoot" value="C:\Windows" />
+
+    <property name="user.name" value="hwasserm" />
+
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+    <property name="sun.jnu.encoding" value="Cp1252" />
+
+    <property name="out.dir" value="classes" />
+
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+    <property name="env.LOCALAPPDATA" value="C:\Users\hwasserm\AppData\Local" />
+
+    <property name="env.ARCGIS_LICENSE_FILE" value="27004@fargo-arcgis-lm.us.navteq.com; 27004@chi-arcgis-lm.hq.navteq.com;27004@eu-arcgis-lm.eu.navteq.com" />
+
+    <property name="lib.dir" value="../lib" />
+
+    <property name="java.specification.name" value="Java Platform API Specification" />
+
+    <property name="user.timezone" value="" />
+
+    <property name="port" value="${tomcat.port}" />
+
+    <property name="env.MODEL" value="E6x10" />
+
+    <property name="path.separator" value=";" />
+
+    <property name="env.RVBD_INSTALL_DIR" value="C:\Program Files\Riverbed\Steelhead Mobile\" />
+
+    <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 37 Stepping 5, GenuineIntel" />
+
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.6.0_24\bin\java.exe" />
+
+    <property name="file.encoding" value="Cp1252" />
+
+    <property name="ant.project.default-target" value="compare" />
+
+    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
+
+    <property name="env.APPDATA" value="C:\Users\hwasserm\AppData\Roaming" />
+
+    <property name="env.LCIDHEX" value="409" />
+
+    <property name="ant.file" value="C:\navteq-test\TestingTools\XStreamCompare\compare\build.xml" />
+
+    <property name="env.QSI_JAVA_HOME" value="c:\apps\qsi_java\java-1.6.0_16" />
+
+    <property name="server" value="${tomcat.host}" />
+
+    <property name="java.io.tmpdir" value="C:\Users\hwasserm\AppData\Local\Temp\" />
+
+    <property name="TODAY" value="20110909_220744" />
+
+    <property name="user.language" value="en" />
+
+    <property name="env.SystemDrive" value="C:" />
+
+    <property name="line.separator" value="&#xd;&#xa;" />
+
+    <property name="env.QCHARNESS_JAVA_HOME" value="c:\apps\qsi_java\java-1.6.0_16" />
+
+    <property name="ant.file.type" value="file" />
+
+    <property name="test.report.dir.expectedresponse" value="C:\navteq-test\TestingTools\XStreamCompare\compare/../test_output/xstream-compare/nmg_TestResults_20110909_220744/data/expectedresponse" />
+
+    <property name="test.report.dir" value="C:\navteq-test\TestingTools\XStreamCompare\compare/../test_output/xstream-compare/nmg_TestResults_20110909_220744" />
+
+    <property name="env.LCIDDEC" value="1033" />
+
+    <property name="java.vm.info" value="mixed mode" />
+
+    <property name="dir.test.integration" value="${dir.test.integration}" />
+
+    <property name="env.DEFLOGDIR" value="C:\ProgramData\McAfee\DesktopProtection" />
+
+    <property name="sun.desktop" value="windows" />
+
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+    <property name="version" value="0.9" />
+
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+
+    <property name="datestamp" value="20110909_220744" />
+
+    <property name="env.TOMCAT_HOME" value="c:\apache-tomcat-6.0.32-branch" />
+
+    <property name="env.LOGONSERVER" value="\\F-DC2" />
+
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+
+    <property name="env.USERDOMAIN" value="NAVTEQ" />
+
+    <property name="server_pointing" value="${server}" />
+
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+
+    <property name="env.JYTHON_HOME" value="c:\apps\qsi_robot\jython-2.5.2" />
+
+    <property name="ant.file.compare" value="C:\navteq-test\TestingTools\XStreamCompare\compare\build.xml" />
+
+    <property name="env.windir" value="C:\Windows" />
+
+    <property name="test.report.dir.request" value="C:\navteq-test\TestingTools\XStreamCompare\compare/../test_output/xstream-compare/nmg_TestResults_20110909_220744/data/request" />
+
+    <property name="os.name" value="Windows 7" />
+
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+    <property name="files" value="none" />
+
+    <property name="env.TMP" value="C:\Users\hwasserm\AppData\Local\Temp" />
+
+    <property name="env.TERM" value="dumb" />
+
+    <property name="env.TYPE" value="Notebook" />
+
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+    <property name="env.ProgramData" value="C:\ProgramData" />
+
+    <property name="env.OS" value="Windows_NT" />
+
+    <property name="ant.file.type.compare" value="file" />
+
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_24\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\CollabNet\Subversion Client;C:\Perl\site\bin;C:\Perl\bin;C:\Ruby192\bin;C:\Program Files\Vim\vim73;C:\csvn\bin\;C:\Windows\SYSTEM32;C:\Windows;C:\Windows\SYSTEM32\WBEM;C:\Windows\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\COMMON FILES\ROXIO SHARED\DLLSHARED\;C:\PROGRAM FILES\COMMON FILES\ROXIO SHARED\10.0\DLLSHARED\;C:\Program Files\Dell\DW WLAN Card;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\apache-ant-1.8.2\bin;C:\Program Files\Java\jdk1.6.0_24\bin;C:\Program Files\Microsoft Network Monitor 3\;C:\apps\qsi_robot\jython-2.5.2\bin;C:\apps\qsi_robot\python-2.7.1;C:\apps\qsi_robot\python-2.7.1\Scripts;C:\cygwin\bin;C:\csvn\Python25\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\" />
+
+    <property name="env.QSI_ROBOT_JYTHON_HOME" value="c:\apps\qsi_robot\jython-2.5.2" />
+
+    <property name="ant.java.version" value="1.6" />
+
+    <property name="basedir" value="C:\navteq-test\TestingTools\XStreamCompare\compare" />
+
+    <property name="env.RVBD_CONFIG_DIR" value="C:\ProgramData\Riverbed\Steelhead_Mobile\" />
+
+    <property name="java.class.version" value="50.0" />
+
+    <property name="env.QSI_ROBOT_ROBOTFRAMEWORK_HOME" value="c:\apps\qsi_robot\robotframework-2.5.7" />
+
+    <property name="ant.home" value="C:\apache-ant-1.8.2" />
+
+    <property name="env.Path" value="C:\Program Files\CollabNet\Subversion Client;C:\Perl\site\bin;C:\Perl\bin;C:\Ruby192\bin;C:\Program Files\Vim\vim73;C:\csvn\bin\;C:\Windows\SYSTEM32;C:\Windows;C:\Windows\SYSTEM32\WBEM;C:\Windows\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\COMMON FILES\ROXIO SHARED\DLLSHARED\;C:\PROGRAM FILES\COMMON FILES\ROXIO SHARED\10.0\DLLSHARED\;C:\Program Files\Dell\DW WLAN Card;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\apache-ant-1.8.2\bin;C:\Program Files\Java\jdk1.6.0_24\bin;C:\Program Files\Microsoft Network Monitor 3\;C:\apps\qsi_robot\jython-2.5.2\bin;C:\apps\qsi_robot\python-2.7.1;C:\apps\qsi_robot\python-2.7.1\Scripts;C:\cygwin\bin;C:\csvn\Python25\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\" />
+
+    <property name="env.JETTY_HOME" value="C:\jetty-distribution-7.3.0.v20110203" />
+
+    <property name="env.HOMEDRIVE" value="C:" />
+
+    <property name="test.report.dir.compare" value="C:\navteq-test\TestingTools\XStreamCompare\compare/../test_output/xstream-compare/nmg_TestResults_20110909_220744/compare/html/" />
+
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_24\jre\bin" />
+
+    <property name="file" value="0040.req" />
+
+    <property name="env.PROCESSOR_REVISION" value="2505" />
+
+    <property name="env.VSEDEFLOGDIR" value="C:\ProgramData\McAfee\DesktopProtection" />
+
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+    <property name="user.variant" value="" />
+
+    <property name="env.DRVDIR" value="C:\DRV" />
+
+    <property name="ant.project.name" value="compare" />
+
+    <property name="new.basedir" value="C:\navteq-test\TestingTools\XStreamCompare\compare" />
+
+    <property name="java.vm.specification.version" value="1.0" />
+
+    <property name="data.dir" value="${dir.xstream.data}" />
+
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+    <property name="env.QSI_HARNESS_HOME" value="c:\apps\qsi_harness" />
+
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+
+    <property name="os.version" value="6.1" />
+
+    <property name="user.home" value="C:\Users\hwasserm" />
+
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+
+    <property name="env.QCHARNESS_HOME" value="c:\apps\qsi_harness" />
+
+    <property name="env.USERDNSDOMAIN" value="AD.NAVTEQ.COM" />
+
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.6.0_24" />
+
+    <property name="user.dir" value="C:\navteq-test\TestingTools\XStreamCompare\compare" />
+
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+
+    <property name="ant.file.type.XStreamCompare" value="file" />
+
+    <property name="test.dir" value="C:\navteq-test\TestingTools\XStreamCompare\compare" />
+
+    <property name="sun.cpu.endian" value="little" />
+
+    <property name="env._USE_CLASSPATH" value="no" />
+
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+
+    <property name="java.vm.version" value="19.1-b02" />
+
+    <property name="java.class.path" value="C:\navteq-test\TestingTools\XStreamCompare\compare\classes;C:\navteq-test\TestingTools\XStreamCompare\lib\commons-io-2.0.1.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\commons-lang3-3.0.1.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\commons-logging-1.1.1.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\httpclient-4.1.2.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\httpcore-4.1.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\junit-4.9b2.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\serializer.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\xalan.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\xercesImpl.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\xml-apis.jar;C:\navteq-test\TestingTools\XStreamCompare\lib\xmlunit-1.3.jar;C:\apache-ant-1.8.2\lib\ant-launcher.jar;C:\apache-ant-1.8.2\lib\ant-antlr.jar;C:\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\apache-ant-1.8.2\lib\ant-jai.jar;C:\apache-ant-1.8.2\lib\ant-javamail.jar;C:\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\apache-ant-1.8.2\lib\ant-jmf.jar;C:\apache-ant-1.8.2\lib\ant-jsch.jar;C:\apache-ant-1.8.2\lib\ant-junit.jar;C:\apache-ant-1.8.2\lib\ant-junit4.jar;C:\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\apache-ant-1.8.2\lib\ant-swing.jar;C:\apache-ant-1.8.2\lib\ant-testutil.jar;C:\apache-ant-1.8.2\lib\ant.jar;C:\Program Files\Java\jdk1.6.0_24\lib\tools.jar" />
+
+    <property name="env.=::" value="::\" />
+
+    <property name="env.HOMEPATH" value="\Users\hwasserm" />
+
+    <property name="env.VS100COMNTOOLS" value="c:\Program Files\Microsoft Visual Studio 10.0\Common7\Tools\" />
+
+    <property name="DSTAMP" value="20110909" />
+
+    <property name="TestRunDate" value=" September 09 at 22:07:44 EDT 2011" />
+
+    <property name="ant.library.dir" value="C:\apache-ant-1.8.2\lib" />
+
+    <property name="os.arch" value="x86" />
+
+    <property name="ant.file.XStreamCompare" value="C:\navteq-test\TestingTools\XStreamCompare\build.xml" />
+
+    <property name="env.SESSIONNAME" value="Console" />
+
+    <property name="compare.dir" value="C:\navteq-test\TestingTools\XStreamCompare\compare/../" />
+
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+
+    <property name="test.report.dir.response" value="C:\navteq-test\TestingTools\XStreamCompare\compare/../test_output/xstream-compare/nmg_TestResults_20110909_220744/data/response" />
+
+    <property name="ant.core.lib" value="C:\apache-ant-1.8.2\lib\ant.jar" />
+
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+    <property name="TSTAMP" value="2207" />
+
+    <property name="file.separator" value="\" />
+
+    <property name="java.runtime.version" value="1.6.0_24-b07" />
+
+    <property name="env.ANT_CMD_LINE_ARGS" value=" -Dfile 0040.req" />
+
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_24\jre\classes" />
+
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+
+    <property name="docs.dir" value="doc" />
+
+    <property name="env.TEMP" value="C:\Users\hwasserm\AppData\Local\Temp" />
+
+    <property name="env.SVN_EDITOR" value="vi" />
+
+    <property name="user.country" value="US" />
+
+    <property name="env.ANT_HOME" value="C:\apache-ant-1.8.2" />
+
+    <property name="env.SYSTYPE" value="LAPTOP" />
+
+    <property name="test.report.dir.data" value="C:\navteq-test\TestingTools\XStreamCompare\compare/../test_output/xstream-compare/nmg_TestResults_20110909_220744/data" />
+
+    <property name="nlg.product" value="NMG" />
+
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+
+    <property name="RunDate" value=" September 09 at 22:07:44 EDT 2011" />
+
+    <property name="env.MULE_HOME" value="C:\mule-standalone-3.1.0" />
+
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\" />
+
+    <property name="java.specification.version" value="1.6" />
+
+    <property name="env.=ExitCode" value="00000000" />
+
+    <property name="sun.arch.data.model" value="32" />
+
+  </properties>
+
+  <testcase classname="com.xstreamcompare.compare.test_CompareResponses" name="CompareResponses" time="0.273">
+
+    <failure message="C:\navteq-test\TestingTools\XStreamCompare\compare\..\data\response\nmg\post-xml\0040.xml&#xa;[different] Expected presence of child nodes to be &apos;true&apos; but was &apos;false&apos; - comparing &lt;Document Node &lt;...&gt;&gt; at  to &lt;Document Node &lt;...&gt;&gt; at &#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: C:\navteq-test\TestingTools\XStreamCompare\compare\..\data\response\nmg\post-xml\0040.xml
+
+[different] Expected presence of child nodes to be &apos;true&apos; but was &apos;false&apos; - comparing &lt;Document Node &lt;...&gt;&gt; at  to &lt;Document Node &lt;...&gt;&gt; at 
+
+
+
+	at com.xstreamcompare.compare.test_CompareResponses.CompareResponses(test_CompareResponses.java:187)
+
+</failure>
+
+  </testcase>
+
+  <system-out><![CDATA[]]></system-out>
+
+  <system-err><![CDATA[SystemId Unknown; Line #-1; Column #-1; Premature end of file.
+
+SystemId Unknown; Line #-1; Column #-1; Premature end of file.
+
+]]></system-err>
+
+</testsuite>
+

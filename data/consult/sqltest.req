@@ -1,0 +1,6 @@
+TESTCASE sqltest, sample sql testcase
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70, SQADATABASE
+    SELECT * FROM sqadatabase.demo_members_one
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70, SQADATABASE
+    SELECT * FROM sqadatabase.demo_members_two
+  COMPARE_TWO_SQL_STATEMENTS

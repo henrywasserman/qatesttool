@@ -1,0 +1,1081 @@
+#EDI TESTS
+TESTCASE Brown4377767942018-12-01 00:00:00.0, compare Brown437776794 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Brown'   AND x_ssn = '437776794'   AND x_dob = '1974-12-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE WILDER0155699912018-12-01 00:00:00.0, compare WILDER015569991 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'WILDER'   AND x_ssn = '015569991'   AND x_dob = '1970-03-11 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Taylor2011147712018-12-01 00:00:00.0, compare Taylor201114771 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Taylor'   AND x_ssn = '201114771'   AND x_dob = '1971-09-21 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE TALBERT0195852862018-12-01 00:00:00.0, compare TALBERT019585286 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'TALBERT'   AND x_ssn = '019585286'   AND x_dob = '1966-02-08 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Nelson2573967212018-12-01 00:00:00.0, compare Nelson257396721 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Nelson'   AND x_ssn = '257396721'   AND x_dob = '1975-05-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Patterson6659052902018-12-01 00:00:00.0, compare Patterson665905290 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Patterson'   AND x_ssn = '665905290'   AND x_dob = '1981-04-22 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SIMMONS JR0307235362018-12-01 00:00:00.0, compare SIMMONS JR030723536 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SIMMONS JR'   AND x_ssn = '030723536'   AND x_dob = '1989-12-19 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE HILL0317426252018-12-01 00:00:00.0, compare HILL031742625 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'HILL'   AND x_ssn = '031742625'   AND x_dob = '1991-07-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE BUCKLEY0346499972018-12-01 00:00:00.0, compare BUCKLEY034649997 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'BUCKLEY'   AND x_ssn = '034649997'   AND x_dob = '1970-06-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE NORTHROP0106696342018-12-01 00:00:00.0, compare NORTHROP010669634 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'NORTHROP'   AND x_ssn = '010669634'   AND x_dob = '1984-07-14 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hart3187449812018-12-01 00:00:00.0, compare Hart318744981 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hart'   AND x_ssn = '318744981'   AND x_dob = '1981-02-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Ward2445228012018-12-01 00:00:00.0, compare Ward244522801 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Ward'   AND x_ssn = '244522801'   AND x_dob = '1958-06-17 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SMITH JR0144689082018-12-01 00:00:00.0, compare SMITH JR014468908 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SMITH JR'   AND x_ssn = '014468908'   AND x_dob = '1957-07-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Taylor3290171452018-12-01 00:00:00.0, compare Taylor329017145 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Taylor'   AND x_ssn = '329017145'   AND x_dob = '1959-11-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Gray6090259262018-12-01 00:00:00.0, compare Gray609025926 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Gray'   AND x_ssn = '609025926'   AND x_dob = '1981-02-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE RANSOM7878825182018-12-01 00:00:00.0, compare RANSOM787882518 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'RANSOM'   AND x_ssn = '787882518'   AND x_dob = '1985-02-10 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE FILADORO0136022952018-12-01 00:00:00.0, compare FILADORO013602295 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'FILADORO'   AND x_ssn = '013602295'   AND x_dob = '1963-04-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Scott6287105492018-12-01 00:00:00.0, compare Scott628710549 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Scott'   AND x_ssn = '628710549'   AND x_dob = '1956-04-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Smith6239900092018-12-01 00:00:00.0, compare Smith623990009 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Smith'   AND x_ssn = '623990009'   AND x_dob = '1959-02-15 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Rogers2449889632018-12-01 00:00:00.0, compare Rogers244988963 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Rogers'   AND x_ssn = '244988963'   AND x_dob = '1960-12-11 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Martinez2790308862018-12-01 00:00:00.0, compare Martinez279030886 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Martinez'   AND x_ssn = '279030886'   AND x_dob = '1956-03-24 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Boyd3971575802018-12-01 00:00:00.0, compare Boyd397157580 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Boyd'   AND x_ssn = '397157580'   AND x_dob = '1965-10-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MENDES0155645112018-12-01 00:00:00.0, compare MENDES015564511 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MENDES'   AND x_ssn = '015564511'   AND x_dob = '1971-10-21 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Thompson1687993872018-12-01 00:00:00.0, compare Thompson168799387 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Thompson'   AND x_ssn = '168799387'   AND x_dob = '1977-12-14 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Prince0112690112018-12-01 00:00:00.0, compare Prince011269011 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Prince'   AND x_ssn = '011269011'   AND x_dob = '1955-10-21 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Crane4067800242018-12-01 00:00:00.0, compare Crane406780024 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Crane'   AND x_ssn = '406780024'   AND x_dob = '1965-07-01 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Cole7689859172018-12-01 00:00:00.0, compare Cole768985917 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Cole'   AND x_ssn = '768985917'   AND x_dob = '1962-11-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Andersen1316342982018-12-01 00:00:00.0, compare Andersen131634298 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Andersen'   AND x_ssn = '131634298'   AND x_dob = '1989-07-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE WINCHESTER0176077132018-12-01 00:00:00.0, compare WINCHESTER017607713 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'WINCHESTER'   AND x_ssn = '017607713'   AND x_dob = '1963-05-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hernandez7869871642018-12-01 00:00:00.0, compare Hernandez786987164 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hernandez'   AND x_ssn = '786987164'   AND x_dob = '1981-06-29 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-07-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MARENGO0184299392018-12-01 00:00:00.0, compare MARENGO018429939 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MARENGO'   AND x_ssn = '018429939'   AND x_dob = '1967-01-14 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE WHEELER0184688752018-12-01 00:00:00.0, compare WHEELER018468875 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'WHEELER'   AND x_ssn = '018468875'   AND x_dob = '1957-04-08 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE STROTHERS0185658862018-12-01 00:00:00.0, compare STROTHERS018565886 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'STROTHERS'   AND x_ssn = '018565886'   AND x_dob = '1964-08-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE GREGOIRE8183524452018-12-01 00:00:00.0, compare GREGOIRE818352445 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'GREGOIRE'   AND x_ssn = '818352445'   AND x_dob = '1977-08-24 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE HARGRETT JR0195816452018-12-01 00:00:00.0, compare HARGRETT JR019581645 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'HARGRETT JR'   AND x_ssn = '019581645'   AND x_dob = '1966-02-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Leach5035996142018-12-01 00:00:00.0, compare Leach503599614 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Leach'   AND x_ssn = '503599614'   AND x_dob = '1966-12-16 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE NEATHAWK0205474452018-12-01 00:00:00.0, compare NEATHAWK020547445 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'NEATHAWK'   AND x_ssn = '020547445'   AND x_dob = '1958-06-09 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ALVARADO0206248662018-12-01 00:00:00.0, compare ALVARADO020624866 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ALVARADO'   AND x_ssn = '020624866'   AND x_dob = '1981-09-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE THEOPHILE0207457992018-12-01 00:00:00.0, compare THEOPHILE020745799 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'THEOPHILE'   AND x_ssn = '020745799'   AND x_dob = '1957-10-24 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Ford1819769402018-12-01 00:00:00.0, compare Ford181976940 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Ford'   AND x_ssn = '181976940'   AND x_dob = '1965-01-30 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Shannon6209034272018-12-01 00:00:00.0, compare Shannon620903427 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Shannon'   AND x_ssn = '620903427'   AND x_dob = '1961-10-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE DEVAUGHN0224606622018-12-01 00:00:00.0, compare DEVAUGHN022460662 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'DEVAUGHN'   AND x_ssn = '022460662'   AND x_dob = '1956-04-03 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE BERGMANN0224869222018-12-01 00:00:00.0, compare BERGMANN022486922 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'BERGMANN'   AND x_ssn = '022486922'   AND x_dob = '1957-05-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SCHULZE0226223912018-12-01 00:00:00.0, compare SCHULZE022622391 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SCHULZE'   AND x_ssn = '022622391'   AND x_dob = '1965-09-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LABOSSIERE0227070312018-12-01 00:00:00.0, compare LABOSSIERE022707031 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LABOSSIERE'   AND x_ssn = '022707031'   AND x_dob = '1988-08-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Ellison0970297502018-12-01 00:00:00.0, compare Ellison097029750 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Ellison'   AND x_ssn = '097029750'   AND x_dob = '1988-08-08 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MCLAURIN-HOLT0235015922018-12-01 00:00:00.0, compare MCLAURIN-HOLT023501592 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MCLAURIN-HOLT'   AND x_ssn = '023501592'   AND x_dob = '1958-12-17 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Miller2292112932018-12-01 00:00:00.0, compare Miller229211293 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Miller'   AND x_ssn = '229211293'   AND x_dob = '1958-05-21 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Everett0324641842018-12-01 00:00:00.0, compare Everett032464184 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Everett'   AND x_ssn = '032464184'   AND x_dob = '1970-11-19 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE KIRKPATRICK0246024042018-12-01 00:00:00.0, compare KIRKPATRICK024602404 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'KIRKPATRICK'   AND x_ssn = '024602404'   AND x_dob = '1964-04-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Green7654623572018-12-01 00:00:00.0, compare Green765462357 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Green'   AND x_ssn = '765462357'   AND x_dob = '1958-06-29 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE OFFUITT0265408112018-12-01 00:00:00.0, compare OFFUITT026540811 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'OFFUITT'   AND x_ssn = '026540811'   AND x_dob = '1963-04-18 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Smith8908107402018-12-01 00:00:00.0, compare Smith890810740 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Smith'   AND x_ssn = '890810740'   AND x_dob = '1976-12-26 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Clayton5134252302018-12-01 00:00:00.0, compare Clayton513425230 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Clayton'   AND x_ssn = '513425230'   AND x_dob = '1986-03-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LACARBONARA0275452232018-12-01 00:00:00.0, compare LACARBONARA027545223 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LACARBONARA'   AND x_ssn = '027545223'   AND x_dob = '1960-01-06 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Leonard7448016192018-12-01 00:00:00.0, compare Leonard744801619 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Leonard'   AND x_ssn = '744801619'   AND x_dob = '1978-05-06 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE TRUBIANO0286263572018-12-01 00:00:00.0, compare TRUBIANO028626357 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'TRUBIANO'   AND x_ssn = '028626357'   AND x_dob = '1967-11-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE TRUBIANO0286263572018-12-01 00:00:00.0, compare TRUBIANO028626357 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'TRUBIANO'   AND x_ssn = '028626357'   AND x_dob = '1967-11-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Douglas2537746282018-12-01 00:00:00.0, compare Douglas253774628 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Douglas'   AND x_ssn = '253774628'   AND x_dob = '1975-06-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE WASHINGTON0306295822018-12-01 00:00:00.0, compare WASHINGTON030629582 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'WASHINGTON'   AND x_ssn = '030629582'   AND x_dob = '1965-11-19 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE BROWN0314600452018-12-01 00:00:00.0, compare BROWN031460045 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'BROWN'   AND x_ssn = '031460045'   AND x_dob = '1955-11-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Jones2916708412018-12-01 00:00:00.0, compare Jones291670841 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Jones'   AND x_ssn = '291670841'   AND x_dob = '1966-03-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Stevenson2671627792018-12-01 00:00:00.0, compare Stevenson267162779 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Stevenson'   AND x_ssn = '267162779'   AND x_dob = '1977-01-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Gonzales3699250742018-12-01 00:00:00.0, compare Gonzales369925074 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Gonzales'   AND x_ssn = '369925074'   AND x_dob = '1969-01-14 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Guzman3188160052018-12-01 00:00:00.0, compare Guzman318816005 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Guzman'   AND x_ssn = '318816005'   AND x_dob = '1963-08-17 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MANGUAL1025815412018-12-01 00:00:00.0, compare MANGUAL102581541 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MANGUAL'   AND x_ssn = '102581541'   AND x_dob = '1972-03-08 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ROMAN2144711402018-12-01 00:00:00.0, compare ROMAN214471140 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ROMAN'   AND x_ssn = '214471140'   AND x_dob = '1968-07-09 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE DE Lewis7841582882018-12-01 00:00:00.0, compare DE Lewis784158288 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'DE Lewis'   AND x_ssn = '784158288'   AND x_dob = '1956-11-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Price6249210382018-12-01 00:00:00.0, compare Price624921038 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Price'   AND x_ssn = '624921038'   AND x_dob = '1963-08-23 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Gonzalez1606669102018-12-01 00:00:00.0, compare Gonzalez160666910 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Gonzalez'   AND x_ssn = '160666910'   AND x_dob = '1958-10-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ROBINSON-Boyd3867689482018-12-01 00:00:00.0, compare ROBINSON-Boyd386768948 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ROBINSON-Boyd'   AND x_ssn = '386768948'   AND x_dob = '1963-08-23 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE GILMOUR3534473472018-12-01 00:00:00.0, compare GILMOUR353447347 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'GILMOUR'   AND x_ssn = '353447347'   AND x_dob = '1956-12-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE PEREZ3887832502018-12-01 00:00:00.0, compare PEREZ388783250 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'PEREZ'   AND x_ssn = '388783250'   AND x_dob = '1961-08-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Mueller2555946772018-12-01 00:00:00.0, compare Mueller255594677 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Mueller'   AND x_ssn = '255594677'   AND x_dob = '1964-10-16 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LOPEZ5820441762018-12-01 00:00:00.0, compare LOPEZ582044176 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LOPEZ'   AND x_ssn = '582044176'   AND x_dob = '1959-12-06 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LUNA5823512042018-12-01 00:00:00.0, compare LUNA582351204 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LUNA'   AND x_ssn = '582351204'   AND x_dob = '1972-03-01 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Adams5041940372018-12-01 00:00:00.0, compare Adams504194037 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Adams'   AND x_ssn = '504194037'   AND x_dob = '1958-04-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MARTINEZ5833932932018-12-01 00:00:00.0, compare MARTINEZ583393293 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MARTINEZ'   AND x_ssn = '583393293'   AND x_dob = '1963-10-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SOTO5842584772018-12-01 00:00:00.0, compare SOTO584258477 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SOTO'   AND x_ssn = '584258477'   AND x_dob = '1963-02-03 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MELENDEZ5849620872018-12-01 00:00:00.0, compare MELENDEZ584962087 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MELENDEZ'   AND x_ssn = '584962087'   AND x_dob = '1956-11-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Guzman4961751802018-12-01 00:00:00.0, compare Guzman496175180 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Guzman'   AND x_ssn = '496175180'   AND x_dob = '1992-01-10 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE WOOD2025423082018-12-01 00:00:00.0, compare WOOD202542308 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'WOOD'   AND x_ssn = '202542308'   AND x_dob = '1956-08-09 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Barker5750922352018-12-01 00:00:00.0, compare Barker575092235 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Barker'   AND x_ssn = '575092235'   AND x_dob = '1954-06-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Contreras2672690582018-12-01 00:00:00.0, compare Contreras267269058 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Contreras'   AND x_ssn = '267269058'   AND x_dob = '1974-07-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Sanders2788280672018-12-01 00:00:00.0, compare Sanders278828067 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Sanders'   AND x_ssn = '278828067'   AND x_dob = '1963-07-31 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MATOS5821183462018-12-01 00:00:00.0, compare MATOS582118346 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MATOS'   AND x_ssn = '582118346'   AND x_dob = '1956-02-19 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Adams3021779652018-12-01 00:00:00.0, compare Adams302177965 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Adams'   AND x_ssn = '302177965'   AND x_dob = '1966-01-16 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Simpson5445368082018-12-01 00:00:00.0, compare Simpson544536808 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Simpson'   AND x_ssn = '544536808'   AND x_dob = '1954-02-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE PAJOTTE0247682552018-12-01 00:00:00.0, compare PAJOTTE024768255 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'PAJOTTE'   AND x_ssn = '024768255'   AND x_dob = '1993-03-19 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Baird7193278652018-12-01 00:00:00.0, compare Baird719327865 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Baird'   AND x_ssn = '719327865'   AND x_dob = '1978-10-17 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Holt6366779092018-12-01 00:00:00.0, compare Holt636677909 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Holt'   AND x_ssn = '636677909'   AND x_dob = '1975-07-06 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hanson5057099962018-12-01 00:00:00.0, compare Hanson505709996 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hanson'   AND x_ssn = '505709996'   AND x_dob = '1965-03-27 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Morgan0997842922018-12-01 00:00:00.0, compare Morgan099784292 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Morgan'   AND x_ssn = '099784292'   AND x_dob = '1956-04-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Singh4556956422018-12-01 00:00:00.0, compare Singh455695642 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Singh'   AND x_ssn = '455695642'   AND x_dob = '1960-11-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Roth8156068272018-12-01 00:00:00.0, compare Roth815606827 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Roth'   AND x_ssn = '815606827'   AND x_dob = '1978-12-18 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Martinez1008927092018-12-01 00:00:00.0, compare Martinez100892709 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Martinez'   AND x_ssn = '100892709'   AND x_dob = '1965-07-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ROBINSON0106207192018-12-01 00:00:00.0, compare ROBINSON010620719 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ROBINSON'   AND x_ssn = '010620719'   AND x_dob = '1974-12-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MOLBECK0285686412018-12-01 00:00:00.0, compare MOLBECK028568641 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MOLBECK'   AND x_ssn = '028568641'   AND x_dob = '1963-03-22 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ROSADO5811566482018-12-01 00:00:00.0, compare ROSADO581156648 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ROSADO'   AND x_ssn = '581156648'   AND x_dob = '1960-01-10 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LUKAS0185004612018-12-01 00:00:00.0, compare LUKAS018500461 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LUKAS'   AND x_ssn = '018500461'   AND x_dob = '1959-03-14 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE WILLIAMS Boone5996572692018-12-01 00:00:00.0, compare WILLIAMS Boone599657269 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'WILLIAMS Boone'   AND x_ssn = '599657269'   AND x_dob = '1969-07-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE WORSHAM0235883612018-12-01 00:00:00.0, compare WORSHAM023588361 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'WORSHAM'   AND x_ssn = '023588361'   AND x_dob = '1963-10-27 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ANDERSON0334211032018-12-01 00:00:00.0, compare ANDERSON033421103 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ANDERSON'   AND x_ssn = '033421103'   AND x_dob = '1953-08-08 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Rivera0809013002018-12-01 00:00:00.0, compare Rivera080901300 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Rivera'   AND x_ssn = '080901300'   AND x_dob = '1972-03-06 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LAMARCHE0194245372018-12-01 00:00:00.0, compare LAMARCHE019424537 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LAMARCHE'   AND x_ssn = '019424537'   AND x_dob = '1963-10-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Vaughn8581025122018-12-01 00:00:00.0, compare Vaughn858102512 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Vaughn'   AND x_ssn = '858102512'   AND x_dob = '1968-04-26 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Jensen0715921272018-12-01 00:00:00.0, compare Jensen071592127 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Jensen'   AND x_ssn = '071592127'   AND x_dob = '1968-06-24 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE DUBICK6733313342018-12-01 00:00:00.0, compare DUBICK673331334 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'DUBICK'   AND x_ssn = '673331334'   AND x_dob = '1997-04-03 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hall8054513922018-12-01 00:00:00.0, compare Hall805451392 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hall'   AND x_ssn = '805451392'   AND x_dob = '1983-06-22 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE GUERRA1075230452018-12-01 00:00:00.0, compare GUERRA107523045 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'GUERRA'   AND x_ssn = '107523045'   AND x_dob = '1959-03-06 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE White6860938162018-12-01 00:00:00.0, compare White686093816 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'White'   AND x_ssn = '686093816'   AND x_dob = '1973-12-11 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Wallace3452152532018-12-01 00:00:00.0, compare Wallace345215253 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Wallace'   AND x_ssn = '345215253'   AND x_dob = '1963-02-15 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Wilson8287918252018-12-01 00:00:00.0, compare Wilson828791825 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Wilson'   AND x_ssn = '828791825'   AND x_dob = '1980-06-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Jackson4370853152018-12-01 00:00:00.0, compare Jackson437085315 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Jackson'   AND x_ssn = '437085315'   AND x_dob = '1978-02-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Larson7608845752018-12-01 00:00:00.0, compare Larson760884575 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Larson'   AND x_ssn = '760884575'   AND x_dob = '1964-01-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE REEDER6023366072018-12-01 00:00:00.0, compare REEDER602336607 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'REEDER'   AND x_ssn = '602336607'   AND x_dob = '1973-02-08 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Evans0173039862018-12-01 00:00:00.0, compare Evans017303986 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Evans'   AND x_ssn = '017303986'   AND x_dob = '1974-03-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ESPINAL4960531672018-12-01 00:00:00.0, compare ESPINAL496053167 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ESPINAL'   AND x_ssn = '496053167'   AND x_dob = '1975-07-14 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ALBUSHIES5530987952018-12-01 00:00:00.0, compare ALBUSHIES553098795 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ALBUSHIES'   AND x_ssn = '553098795'   AND x_dob = '1963-08-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE HOLZ0155870532018-12-01 00:00:00.0, compare HOLZ015587053 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'HOLZ'   AND x_ssn = '015587053'   AND x_dob = '1973-04-10 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-09-01 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Martinez3871392392018-12-01 00:00:00.0, compare Martinez387139239 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Martinez'   AND x_ssn = '387139239'   AND x_dob = '1990-11-11 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Barry7015634972018-12-01 00:00:00.0, compare Barry701563497 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Barry'   AND x_ssn = '701563497'   AND x_dob = '1964-10-29 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Wilson5779972212018-12-01 00:00:00.0, compare Wilson577997221 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Wilson'   AND x_ssn = '577997221'   AND x_dob = '1959-12-07 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SANTOS5848981602018-12-01 00:00:00.0, compare SANTOS584898160 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SANTOS'   AND x_ssn = '584898160'   AND x_dob = '1978-12-11 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SANTOS5848981602018-12-01 00:00:00.0, compare SANTOS584898160 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SANTOS'   AND x_ssn = '584898160'   AND x_dob = '1978-12-11 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Fisher1865497312018-12-01 00:00:00.0, compare Fisher186549731 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Fisher'   AND x_ssn = '186549731'   AND x_dob = '1978-11-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE RADIGAN4698460402018-12-01 00:00:00.0, compare RADIGAN469846040 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'RADIGAN'   AND x_ssn = '469846040'   AND x_dob = '1974-02-17 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE DONAHUE6015191572018-12-01 00:00:00.0, compare DONAHUE601519157 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'DONAHUE'   AND x_ssn = '601519157'   AND x_dob = '1958-04-15 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Ruiz1432266432018-12-01 00:00:00.0, compare Ruiz143226643 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Ruiz'   AND x_ssn = '143226643'   AND x_dob = '1972-12-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Lopez8719532482018-12-01 00:00:00.0, compare Lopez871953248 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Lopez'   AND x_ssn = '871953248'   AND x_dob = '1961-05-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Lopez8719532482018-12-01 00:00:00.0, compare Lopez871953248 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Lopez'   AND x_ssn = '871953248'   AND x_dob = '1961-05-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE PEREZ1077239952018-12-01 00:00:00.0, compare PEREZ107723995 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'PEREZ'   AND x_ssn = '107723995'   AND x_dob = '1971-07-29 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MARTEL0115418322018-12-01 00:00:00.0, compare MARTEL011541832 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MARTEL'   AND x_ssn = '011541832'   AND x_dob = '1966-06-25 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE RIVARD0295237612018-12-01 00:00:00.0, compare RIVARD029523761 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'RIVARD'   AND x_ssn = '029523761'   AND x_dob = '1974-06-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hill8669861452018-12-01 00:00:00.0, compare Hill866986145 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hill'   AND x_ssn = '866986145'   AND x_dob = '1968-09-21 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Harmon0407800032018-12-01 00:00:00.0, compare Harmon040780003 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Harmon'   AND x_ssn = '040780003'   AND x_dob = '1966-01-18 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MARTINEZ5815137402018-12-01 00:00:00.0, compare MARTINEZ581513740 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MARTINEZ'   AND x_ssn = '581513740'   AND x_dob = '1974-03-15 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Vargas4045174742018-12-01 00:00:00.0, compare Vargas404517474 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Vargas'   AND x_ssn = '404517474'   AND x_dob = '1954-05-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hodges8253253422018-12-01 00:00:00.0, compare Hodges825325342 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hodges'   AND x_ssn = '825325342'   AND x_dob = '1959-01-19 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE FLANAGAN0216491292018-12-01 00:00:00.0, compare FLANAGAN021649129 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'FLANAGAN'   AND x_ssn = '021649129'   AND x_dob = '1970-03-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Huynh3404489692018-12-01 00:00:00.0, compare Huynh340448969 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Huynh'   AND x_ssn = '340448969'   AND x_dob = '1959-10-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hahn7983256262018-12-01 00:00:00.0, compare Hahn798325626 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hahn'   AND x_ssn = '798325626'   AND x_dob = '1979-01-18 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE HUNT0822462532018-12-01 00:00:00.0, compare HUNT082246253 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'HUNT'   AND x_ssn = '082246253'   AND x_dob = '1973-02-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Jones0933872872018-12-01 00:00:00.0, compare Jones093387287 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Jones'   AND x_ssn = '093387287'   AND x_dob = '1975-01-08 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Bauer5413552892018-12-01 00:00:00.0, compare Bauer541355289 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Bauer'   AND x_ssn = '541355289'   AND x_dob = '1979-10-10 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SCALI0287415982018-12-01 00:00:00.0, compare SCALI028741598 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SCALI'   AND x_ssn = '028741598'   AND x_dob = '1991-05-16 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE ARIAS0107807962018-12-01 00:00:00.0, compare ARIAS010780796 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'ARIAS'   AND x_ssn = '010780796'   AND x_dob = '1965-11-17 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Hutchinson6265407662018-12-01 00:00:00.0, compare Hutchinson626540766 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Hutchinson'   AND x_ssn = '626540766'   AND x_dob = '1966-07-14 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Myers6581534302018-12-01 00:00:00.0, compare Myers658153430 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Myers'   AND x_ssn = '658153430'   AND x_dob = '1957-07-25 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Rodriguez3857245162018-12-01 00:00:00.0, compare Rodriguez385724516 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Rodriguez'   AND x_ssn = '385724516'   AND x_dob = '1985-07-05 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-07-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE KALIL0276441282018-12-01 00:00:00.0, compare KALIL027644128 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'KALIL'   AND x_ssn = '027644128'   AND x_dob = '1970-11-09 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE RODRIGUEZ BURGOS0548698792018-12-01 00:00:00.0, compare RODRIGUEZ BURGOS054869879 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'RODRIGUEZ BURGOS'   AND x_ssn = '054869879'   AND x_dob = '1959-01-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE HERTZBERG0126435502018-12-01 00:00:00.0, compare HERTZBERG012643550 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'HERTZBERG'   AND x_ssn = '012643550'   AND x_dob = '1982-04-16 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE GRYSZOWKA7202581802018-12-01 00:00:00.0, compare GRYSZOWKA720258180 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'GRYSZOWKA'   AND x_ssn = '720258180'   AND x_dob = '1994-04-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Smith6063207172018-12-01 00:00:00.0, compare Smith606320717 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Smith'   AND x_ssn = '606320717'   AND x_dob = '1974-03-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE NALLY0316864632018-12-01 00:00:00.0, compare NALLY031686463 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'NALLY'   AND x_ssn = '031686463'   AND x_dob = '1977-04-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LEBRON HERNANDEZ0141388272018-12-01 00:00:00.0, compare LEBRON HERNANDEZ014138827 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LEBRON HERNANDEZ'   AND x_ssn = '014138827'   AND x_dob = '1985-06-04 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE OWUSU6710772522018-12-01 00:00:00.0, compare OWUSU671077252 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'OWUSU'   AND x_ssn = '671077252'   AND x_dob = '1966-04-24 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE FLOYD2833465272018-12-01 00:00:00.0, compare FLOYD283346527 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'FLOYD'   AND x_ssn = '283346527'   AND x_dob = '1954-07-26 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE MURPHY0167446382018-12-01 00:00:00.0, compare MURPHY016744638 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'MURPHY'   AND x_ssn = '016744638'   AND x_dob = '1988-05-20 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE DUSTON2199927242018-12-01 00:00:00.0, compare DUSTON219992724 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'DUSTON'   AND x_ssn = '219992724'   AND x_dob = '1955-05-03 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Smith4757410202018-12-01 00:00:00.0, compare Smith475741020 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Smith'   AND x_ssn = '475741020'   AND x_dob = '1980-02-26 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE JOHNSON7312409662018-12-01 00:00:00.0, compare JOHNSON731240966 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'JOHNSON'   AND x_ssn = '731240966'   AND x_dob = '1963-04-26 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE BAPTISTE BERNARD7661009132018-12-01 00:00:00.0, compare BAPTISTE BERNARD766100913 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'BAPTISTE BERNARD'   AND x_ssn = '766100913'   AND x_dob = '1976-10-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Burns0379766432018-12-01 00:00:00.0, compare Burns037976643 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Burns'   AND x_ssn = '037976643'   AND x_dob = '1985-10-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE GLIDDEN0144438232018-12-01 00:00:00.0, compare GLIDDEN014443823 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'GLIDDEN'   AND x_ssn = '014443823'   AND x_dob = '1953-11-26 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE CASTELLO5812121562018-12-01 00:00:00.0, compare CASTELLO581212156 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'CASTELLO'   AND x_ssn = '581212156'   AND x_dob = '1964-04-21 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Jackson7104403382018-12-01 00:00:00.0, compare Jackson710440338 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Jackson'   AND x_ssn = '710440338'   AND x_dob = '1985-08-12 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE REMICK0496843102018-12-01 00:00:00.0, compare REMICK049684310 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'REMICK'   AND x_ssn = '049684310'   AND x_dob = '1963-02-16 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Martinez4616159972018-12-01 00:00:00.0, compare Martinez461615997 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Martinez'   AND x_ssn = '461615997'   AND x_dob = '1971-02-09 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SOSTRE MORALES5838448082018-12-01 00:00:00.0, compare SOSTRE MORALES583844808 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SOSTRE MORALES'   AND x_ssn = '583844808'   AND x_dob = '1957-02-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Martinez1498154652018-12-01 00:00:00.0, compare Martinez149815465 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Martinez'   AND x_ssn = '149815465'   AND x_dob = '1965-04-02 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Ochoa6433513812018-12-01 00:00:00.0, compare Ochoa643351381 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Ochoa'   AND x_ssn = '643351381'   AND x_dob = '1992-09-18 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Bowman2160982932018-12-01 00:00:00.0, compare Bowman216098293 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Bowman'   AND x_ssn = '216098293'   AND x_dob = '1990-11-15 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-08-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE Bowman2160982932018-12-01 00:00:00.0, compare Bowman216098293 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'Bowman'   AND x_ssn = '216098293'   AND x_dob = '1990-11-15 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SWAN0076457052018-12-01 00:00:00.0, compare SWAN007645705 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SWAN'   AND x_ssn = '007645705'   AND x_dob = '1965-05-06 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE LOPEZ5832312582018-12-01 00:00:00.0, compare LOPEZ583231258 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'LOPEZ'   AND x_ssn = '583231258'   AND x_dob = '1963-07-28 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE BOUSONO-LARA5819720702018-12-01 00:00:00.0, compare BOUSONO-LARA581972070 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'BOUSONO-LARA'   AND x_ssn = '581972070'   AND x_dob = '1983-12-13 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2018-07-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE SOSA Davis5049857032018-12-01 00:00:00.0, compare SOSA Davis504985703 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'SOSA Davis'   AND x_ssn = '504985703'   AND x_dob = '1972-07-10 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+
+TESTCASE GARCIA5844953052018-12-01 00:00:00.0, compare GARCIA584495305 against expected ediResults from edi file
+  RUN_MYSQLSERVER_EXECUTE_SQL 192.168.1.70\sqadatabase, edi_test_data
+  SELECT column_1,x_filename,x_confidentiality_code,x_dob,x_enrolled_by,x_entity_identification_code,x_entity_type_qualifier,x_first_name,x_gender_code,x_handicap_indicator,x_hic_number,x_last_name,x_maintenance_type_code,x_mass_health_id,x_middle_name,x_plan_end_date,x_plan_start_date,x_primary_language_spoken,x_primary_language_written,x_race_or_ethnicity_code,x_rating_category,x_ssn  FROM sqadatabase.edi_test_data  WHERE x_last_name = 'GARCIA'   AND x_ssn = '584495305'   AND x_dob = '1960-11-26 00:00:00.0'   AND x_plan_start_date = '2018-12-01 00:00:00.0'   AND x_plan_end_date = '2299-12-31 00:00:00.0'  ORDER BY x_file_create_date DESC LIMIT 1
+  COMPARE
+  IGNORE x_mdm_member_id,x_member_prior_details_x_talend_id,x_fileseq_num,x_talend_timestamp,x_stg_seq_num,x_file_create_date
+

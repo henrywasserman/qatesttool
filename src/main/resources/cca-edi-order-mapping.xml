@@ -1,0 +1,383 @@
+<medi:edimap xmlns:medi="http://www.milyn.org/schema/edi-message-mapping-1.5.xsd">
+    <medi:description name="834 CSS Format V2" version="1.0"/>
+    <medi:delimiters component=" " field="*" segment="~" sub-component="!"/>
+    <medi:segments xmltag="edi.mp.css">
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="1" segcode="ISA" truncatable="false" xmltag="ISA">
+            <medi:field required="false" truncatable="false" xmltag="Authorization-Information-Qualifier"/>
+            <medi:field required="false" truncatable="false" xmltag="Author-Information"/>
+            <medi:field required="false" truncatable="false" xmltag="Security-Info-Qual"/>
+            <medi:field required="false" truncatable="false" xmltag="Security-Information"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-ID-Qual1"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-Sender-ID"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-ID-Qual2"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-ReceiverID"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-Date"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-Time"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-Ctrl-Stand-Ident"/>
+            <medi:field required="false" truncatable="false" xmltag="Inter-Ctrl-Version-Number"/>
+            <medi:field required="false" truncatable="false" xmltag="Inter-Ctrl-Number"/>
+            <medi:field required="false" truncatable="false" xmltag="Ack-Requested"/>
+            <medi:field required="false" truncatable="false" xmltag="Usage-Indicator"/>
+            <medi:field required="false" truncatable="false" xmltag="Component-Elem-Sepera"/>
+        </medi:segment>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="1" segcode="GS" truncatable="false" xmltag="GS">
+            <medi:field required="false" truncatable="false" xmltag="Functional-Identifier-Code"/>
+            <medi:field required="false" truncatable="false" xmltag="Application-Senders-Code"/>
+            <medi:field required="false" truncatable="false" xmltag="Application-Receivers-Code"/>
+            <medi:field required="false" truncatable="false" xmltag="Date"/>
+            <medi:field required="false" truncatable="false" xmltag="Time"/>
+            <medi:field required="false" truncatable="false" xmltag="Group-Control-Number"/>
+            <medi:field required="false" truncatable="false" xmltag="Responsible-Agency-Code"/>
+            <medi:field required="false" truncatable="false" xmltag="VersionReleaseIndustry-Identifier-Code"/>
+        </medi:segment>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="1" segcode="ST" truncatable="false" xmltag="ST">
+            <medi:field required="false" truncatable="false" xmltag="Transaction-Set-Identifier-Code"/>
+            <medi:field required="false" truncatable="false" xmltag="Transaction-Set-Control-Number"/>
+            <medi:field required="false" truncatable="false" xmltag="Implementation-Convention-Reference"/>
+        </medi:segment>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="1" segcode="BGN" truncatable="false" xmltag="BGN">
+            <medi:field required="false" truncatable="false" xmltag="Transaction-Set-Purpose-Code"/>
+            <medi:field required="false" truncatable="false" xmltag="Reference-Identification1"/>
+            <medi:field required="false" truncatable="false" xmltag="Date"/>
+            <medi:field required="false" truncatable="false" xmltag="Time"/>
+            <medi:field required="false" truncatable="false" xmltag="Time-Zone-Code"/>
+            <medi:field required="false" truncatable="false" xmltag="Reference-Identification2"/>
+            <medi:field required="false" truncatable="false" xmltag="Empty"/>
+            <medi:field required="false" truncatable="false" xmltag="Action"/>
+        </medi:segment>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="1" segcode="DTP" truncatable="false" xmltag="DTP">
+            <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+            <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+            <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+        </medi:segment>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="1" segcode="N1" truncatable="true" xmltag="N1">
+            <medi:field required="false" truncatable="true" xmltag="Entity-Identifier-Code"/>
+            <medi:field required="false" truncatable="true" xmltag="Name"/>
+            <medi:field required="false" truncatable="true" xmltag="Edentification-Code-Qualifier"/>
+            <medi:field required="false" truncatable="true" xmltag="Identification-Code"/>
+        </medi:segment>
+
+        <medi:segmentGroup maxOccurs="-1" minOccurs="0" xmltag="INS-ITEMS">
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="1" segcode="INS" truncatable="true" xmltag="INS">
+                <medi:field required="false" truncatable="false" xmltag="Member-Indicator"/>
+                <medi:field required="false" truncatable="false" xmltag="Individual-Relationship-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Maintenance-Type-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Maintenance-Reason-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Benefit-Status-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Medicare-Plan-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="COBRA"/>
+                <medi:field required="false" truncatable="false" xmltag="Employment-Status-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Student-Status-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Yes-no-Condition-or-Response-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Unknown1"/>
+                <medi:field required="false" truncatable="true" xmltag="Unknown2"/>
+                <medi:field required="false" truncatable="true" xmltag="Confidentiality-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="REF" truncatable="false" xmltag="REF">
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="DTP" truncatable="false" xmltag="DTP">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="true" maxOccurs="-1" minOccurs="0" segcode="NM1" truncatable="true" xmltag="NM1">
+                <medi:field required="false" truncatable="true" xmltag="Entity-ID-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Entity-Type-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-Last-or-Organization-Name"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-First"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-Middle"/>
+                <medi:field required="false" truncatable="true" xmltag="test1"/>
+                <medi:field required="false" truncatable="true" xmltag="test2"/>
+                <medi:field required="false" truncatable="true" xmltag="Identification-Code-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Identification-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="PER" truncatable="true" xmltag="PER">
+                <medi:field required="false" truncatable="false" xmltag="Contact-Function-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Communication-Number-Qualifier1"/>
+                <medi:field required="false" truncatable="false" xmltag="Communication-Number1"/>
+                <medi:field required="false" truncatable="true" xmltag="Communication-Number-Qualifier2"/>
+                <medi:field required="false" truncatable="true" xmltag="Communication-Number2"/>
+                <medi:field required="false" truncatable="true" xmltag="Communication-Number-Qualifier3"/>
+                <medi:field required="false" truncatable="true" xmltag="Communication-Number3"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="N3" truncatable="true" xmltag="N3">
+                <medi:field required="false" truncatable="false" xmltag="Member-Residence-Street-Address"/>
+                <medi:field required="false" truncatable="true" xmltag="Unknown"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="N4" truncatable="true" xmltag="N4">
+                <medi:field required="false" truncatable="true" xmltag="City-Name"/>
+                <medi:field required="false" truncatable="true" xmltag="State-or-Province-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Postal-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Country-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Location-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Location-Identifier"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="DMG" truncatable="false" xmltag="DMG">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period"/>
+                <medi:field required="false" truncatable="false" xmltag="Gender-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Marital-Status-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Race-or-Ethnicity-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="AMT" truncatable="false" xmltag="AMT">
+                <medi:field required="false" truncatable="false" xmltag="Amount-Qualifier-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Non-Covered-Charge-Amount"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="LUI" truncatable="true" xmltag="LUI">
+                <medi:field required="false" truncatable="false" xmltag="Identification-Code-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Identification-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Description"/>
+                <medi:field required="false" truncatable="false" xmltag="Use-of-Language-Indicator"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="NM1" truncatable="true" xmltag="NM1">
+                <medi:field required="false" truncatable="false" xmltag="Entity-ID-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Entity-Type-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-Last-or-Organization-Name"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-First"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-Middle"/>
+                <medi:field required="false" truncatable="true" xmltag="test1"/>
+                <medi:field required="false" truncatable="true" xmltag="test2"/>
+                <medi:field required="false" truncatable="true" xmltag="Identification-Code-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Identification-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="DMG" truncatable="true" xmltag="DMG">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period"/>
+                <medi:field required="false" truncatable="false" xmltag="Gender-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Marital-Status-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Race-or-Ethnicity-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Citizenship-Status-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="NM1" truncatable="true" xmltag="NM1">
+                <medi:field required="false" truncatable="false" xmltag="Entity-ID-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Entity-Type-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-Last-or-Organization-Name"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-First"/>
+                <medi:field required="false" truncatable="true" xmltag="Name-Middle"/>
+                <medi:field required="false" truncatable="true" xmltag="test1"/>
+                <medi:field required="false" truncatable="true" xmltag="test2"/>
+                <medi:field required="false" truncatable="true" xmltag="Identification-Code-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Identification-Code"/>
+            </medi:segment>
+
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="N3" truncatable="true" xmltag="N3">
+                <medi:field required="false" truncatable="false" xmltag="Member-Residence-Street-Address"/>
+                <medi:field required="false" truncatable="true" xmltag="Unknown"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="N4" truncatable="true" xmltag="N4">
+                <medi:field required="false" truncatable="false" xmltag="City-Name"/>
+                <medi:field required="false" truncatable="false" xmltag="State-or-Province-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Postal-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Country-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Location-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Location-Identifier"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="DMG" truncatable="true" xmltag="DMG">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period"/>
+                <medi:field required="false" truncatable="false" xmltag="Gender-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Marital-Status-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Race-or-Ethnicity-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Citizenship-Status-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="HD" truncatable="true" xmltag="HD">
+                <medi:field required="false" truncatable="true" xmltag="Maintenance-Type-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Insurance-Line-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Plan-Coverage-Description"/>
+                <medi:field required="false" truncatable="true" xmltag="Coverage-Level"/>
+                <medi:field required="false" truncatable="true" xmltag="unknown"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="DTP" truncatable="false" xmltag="DTP">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LS" truncatable="false" xmltag="LS">
+                <medi:field required="false" truncatable="false" xmltag="Loop-Identifier-Code"/>
+            </medi:segment>
+            <medi:segmentGroup maxOccurs="-1" minOccurs="0" xmltag="lx-tag">
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LX" truncatable="false" xmltag="LX">
+                    <medi:field required="false" truncatable="false" xmltag="Assigned-Number"/>
+                </medi:segment>
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="NM1" truncatable="true" xmltag="NM1">
+                    <medi:field required="false" truncatable="false" xmltag="Entity-ID-Code"/>
+                    <medi:field required="false" truncatable="false" xmltag="Entity-Type-Qualifier"/>
+                    <medi:field required="false" truncatable="true" xmltag="Name-Last-or-Organization-Name"/>
+                    <medi:field required="false" truncatable="true" xmltag="Name-First"/>
+                    <medi:field required="false" truncatable="true" xmltag="Name-Middle"/>
+                    <medi:field required="false" truncatable="true" xmltag="test1"/>
+                    <medi:field required="false" truncatable="true" xmltag="test2"/>
+                    <medi:field required="false" truncatable="true" xmltag="Identification-Code-Qualifier"/>
+                    <medi:field required="false" truncatable="true" xmltag="Identification-Code"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown"/>
+                </medi:segment>
+
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="PLA" truncatable="true" xmltag="PLA">
+                    <medi:field required="false" truncatable="true" xmltag="unknown1"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown2"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown3"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown4"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown5"/>
+                </medi:segment>
+
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="COB" truncatable="true" xmltag="COB">
+                    <medi:field required="false" truncatable="true" xmltag="unknown1"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown2"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown3"/>
+                </medi:segment>
+
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="LX" truncatable="false" xmltag="LX">
+                    <medi:field required="false" truncatable="false" xmltag="Assigned-Number"/>
+                </medi:segment>
+
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="NM1" truncatable="true" xmltag="NM1">
+                    <medi:field required="false" truncatable="false" xmltag="Entity-ID-Code"/>
+                    <medi:field required="false" truncatable="false" xmltag="Entity-Type-Qualifier"/>
+                    <medi:field required="false" truncatable="true" xmltag="Name-Last-or-Organization-Name"/>
+                    <medi:field required="false" truncatable="true" xmltag="Name-First"/>
+                    <medi:field required="false" truncatable="true" xmltag="Name-Middle"/>
+                    <medi:field required="false" truncatable="true" xmltag="test1"/>
+                    <medi:field required="false" truncatable="true" xmltag="test2"/>
+                    <medi:field required="false" truncatable="true" xmltag="Identification-Code-Qualifier"/>
+                    <medi:field required="false" truncatable="true" xmltag="Identification-Code"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown"/>
+                </medi:segment>
+
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="PLA" truncatable="true" xmltag="PLA">
+                    <medi:field required="false" truncatable="true" xmltag="unknown1"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown2"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown3"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown4"/>
+                    <medi:field required="false" truncatable="true" xmltag="unknown5"/>
+                </medi:segment>
+
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="LS" truncatable="false" xmltag="LS">
+                    <medi:field required="false" truncatable="false" xmltag="Loop-Identifier-Code"/>
+                </medi:segment>
+
+
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="N1" truncatable="false" xmltag="N1">
+                    <medi:field required="false" truncatable="false" xmltag="Entity-Identifier-Code"/>
+                    <medi:field required="false" truncatable="false" xmltag="Name"/>
+                </medi:segment>
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="REF" truncatable="false" xmltag="REF">
+                    <medi:field required="false" truncatable="false" xmltag="Reference-Identification-Qualifier"/>
+                    <medi:field required="false" truncatable="false" xmltag="Reference-Identification"/>
+                </medi:segment>
+                <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="DTP" truncatable="false" xmltag="DTP">
+                    <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+                    <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                    <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+                </medi:segment>
+            </medi:segmentGroup>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LE" truncatable="false" xmltag="LE">
+                <medi:field required="false" truncatable="false" xmltag="Loop-Identifier-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LS" truncatable="false" xmltag="LS">
+                <medi:field required="false" truncatable="false" xmltag="Loop-Identifier-Code"/>
+            </medi:segment>
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LX" truncatable="false" xmltag="LX">
+                <medi:field required="false" truncatable="false" xmltag="Assigned-Number"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="N1" truncatable="true" xmltag="N1">
+                <medi:field required="false" truncatable="true" xmltag="Entity-Identifier-Code"/>
+                <medi:field required="false" truncatable="true" xmltag="Name"/>
+                <medi:field required="false" truncatable="true" xmltag="Edentification-Code-Qualifier"/>
+                <medi:field required="false" truncatable="true" xmltag="Identification-Code"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="REF" truncatable="false" xmltag="REF">
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="DTP" truncatable="false" xmltag="DTP">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LE" truncatable="false" xmltag="LE">
+                <medi:field required="false" truncatable="false" xmltag="Loop-Identifier-Code"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="COB" truncatable="true" xmltag="COB">
+                <medi:field required="false" truncatable="true" xmltag="unknown1"/>
+                <medi:field required="false" truncatable="true" xmltag="unknown2"/>
+                <medi:field required="false" truncatable="true" xmltag="unknown3"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="DTP" truncatable="false" xmltag="DTP">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LS" truncatable="false" xmltag="LS">
+                <medi:field required="false" truncatable="false" xmltag="Loop-Identifier-Code"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LX" truncatable="false" xmltag="LX">
+                <medi:field required="false" truncatable="false" xmltag="Assigned-Number"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="N1" truncatable="false" xmltag="N1">
+                <medi:field required="false" truncatable="false" xmltag="Entity-Identifier-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Name"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="REF" truncatable="false" xmltag="REF">
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="DTP" truncatable="false" xmltag="DTP">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LX" truncatable="false" xmltag="LX">
+                <medi:field required="false" truncatable="false" xmltag="Assigned-Number"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="N1" truncatable="false" xmltag="N1">
+                <medi:field required="false" truncatable="false" xmltag="Entity-Identifier-Code"/>
+                <medi:field required="false" truncatable="false" xmltag="Name"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="REF" truncatable="false" xmltag="REF">
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Reference-Identification"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="-1" minOccurs="0" segcode="DTP" truncatable="false" xmltag="DTP">
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format-Qualifier"/>
+                <medi:field required="false" truncatable="false" xmltag="Date-Time-Period-Format"/>
+            </medi:segment>
+
+            <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="LE" truncatable="false" xmltag="LE">
+                <medi:field required="false" truncatable="false" xmltag="Loop-Identifier-Code"/>
+            </medi:segment>
+
+
+        </medi:segmentGroup>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="SE" truncatable="false" xmltag="SE">
+            <medi:field required="false" truncatable="false" xmltag="Number-of-Included-Segments"/>
+            <medi:field required="false" truncatable="false" xmltag="Transaction-Set-Control-Number"/>
+        </medi:segment>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="GE" truncatable="false" xmltag="GE">
+            <medi:field required="false" truncatable="false" xmltag="Number-of-Transaction-Sets-Included"/>
+            <medi:field required="false" truncatable="false" xmltag="Group-Control-Number"/>
+        </medi:segment>
+        <medi:segment ignoreUnmappedFields="false" maxOccurs="1" minOccurs="0" segcode="IEA" truncatable="false" xmltag="IEA">
+            <medi:field required="false" truncatable="false" xmltag="Number-of-Included-Functional-Groups"/>
+            <medi:field required="false" truncatable="false" xmltag="Interchange-Control-Number"/>
+        </medi:segment>
+    </medi:segments>
+</medi:edimap>

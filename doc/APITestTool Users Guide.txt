@@ -1,0 +1,96 @@
+Introduction:
+==============
+The ResponseCompare framework allows testing of HTML based RESTful requests/responses. Through a high-level scripting language users can use basic HTTP calls such as GET, POST, and POST with XML or JSON parameters. Validation of XML responses is achieved by first transforming the XML or JSON response using XSLT to strip out volatile values that change on a per-request basis and then the transformed result is compared with an expected result file (also XML).
+In general, the GET_* and POST_* commands in the req script file do automatic saving off of any files returned (XML JSON or images) and an automatic XSLT transformation and comparison to a expected result files.
+
+
+ResponseCompare Scripts:
+==================
+
+ResponseCompare script files end in '.req' and represent suites of test cases. Each file can contain multiple test cases formatted as follows:
+
+TESTCASE <test_id>, <some description>
+  <COMMAND> <parameter>
+  <COMMAND> <parameter>
+  <COMMAND> <parameter>
+...
+
+Where:
+  the keyword "TESTCASE" denotes the beginning of a new test case
+  <test_id> is a string ID for the test case
+  <some description> is any free form text to describe the test
+  <COMMAND> is a reserved word recognized by ResponseCompare
+  <parameter> is a (possibly optional) parameter for that reserved word
+  
+Line comments are supported and start with a '#'. These lines are ignored. Partial-line comments are not supported.
+Blank lines are ignored, as is whitespace at the start of a line.
+In-line variable substitutions are supported and are designated by ${my_var}. Variables come from either the external properties file located under "ResponseCompare/request/properites" or have from the previous request. When you want the value for the variable to come from the properties file, the name of the variable must be the same as is specified in the properties file. When you want the variable to come from the previous request, the name of the variable must be identical to the node from which it's value is extracted.
+NOTE: Currently XML attributes are not supported for extracting variable values, only nodes.
+
+Example test case:
+------------------------
+TESTCASE 001, Validate endusercheckin, auto-registration, non-secure affiliate, with NMS ad in response
+  GET ${infogroup_host_port}/${infogroup_end_point}?a=enduserregistration&affiliatenametag=INFOGROUP_AUTO&deviceserialnum=stakuiafgrpy&responsetype=xml&ver=${lpa_version}&mockpans
+  GET ${infogroup_host_port}/${infogroup_end_point}?ver=${lpa_version}&a=endusercheckin&enduserid=${enduserid}&longitude=-71056630&latitude=42359119&localepref=en-us&responsetype=xml&disablepani=false&mockpans
+  VALIDATE_RESPONSE
+
+  
+Keywords Supported by the ResponseCompare Framework:
+=================================================
+GET <url>
+  <url> is the complete URL for the request without "http://" at the start
+  This command will make an HTTP GET RESTful request, save and save off the resultant XML file. This command also works for LPA's hashtable format. In the case of hashtable, the binary file is saved but then converted to XML for further validation and processing. Unless a 'VALIDATE_RESPONSE' follows this command, the resultant xml is transformed using "response.xsl" and compared to it's expected response file.
+
+GET_IMAGE <url>
+  <url> is the complete URL for a request expected to return an image without "http://" at the start.
+  This command makes an HTTP GET call and expects that an image file is returned, not XML. The image is saved to disk as "testid.png" (or jpg depending on return type). The file is then compared to the expected response image file of the same name.
+
+GET_IMAGES <url>
+  <url> is the complete URL for a request expected to return an image without "http://" at the start
+  This command will make an HTTP GET RESTful request, save off the resultant XML file. It then scans through the XML file and pulls out the image/url nodes, uses those URLs to make HTTP calls, and saves the resultant images to disk. It then compares those images to expected images. The image file names are saved as testid_#. (e.g. 190_1.png, 190_2.png, etc., or *.jpg depending on the return type of the images as specified in the Content-Type header).
+  The XML file saved off is also transformed using the standard response.xsl and then compared to an expected file of "testid.xml".
+
+GETLIST_JASON <url>
+  <url> is the complete URL for an adview request expected to return JSON, not XML. The JSON that is returned is then changed into xml and then transformed like the other xml responses
+
+POST <url>
+  <url> is the complete URL for the request without "http://" at the start
+  This command will make an HTTP POST RESTful request, save and save off the resultant XML file. This command also works for LPA's hashtable format. In the case of hashtable, the binary file is saved but then converted to XML for further validation and processing.
+
+POST_IMAGE <url>
+
+POST_IMAGES <url>
+
+POST_XML <url>
+  
+SET_HEADER <header:value>
+  <header:value> is a header name and it's value separated by a colon (e.g. User-Agent:E71). This command must be immediately follow a GET, POST or POST_XML command as it will associated with it. You can specify as many SET_HEADER commands as you like but they must immediately follow the associated verb.
+
+SKIP_COMPARE
+  This command takes no params. This indicates that the test should not invoke any of the compare steps
+  
+TESTCASE <test_id>, <some description>
+  <test_id> is a string ID for the test case
+  <some description> is any free form text to describe the test
+  The test id and description must be separater by a comma. The description can also contain commas as only the first comma on the line matters to the script parser.
+
+VALIDATE_HEADER <header:regex>
+
+VALIDATE_HEADER_NOTEXIST <header>
+
+VALIDATE_HEADER_SET (<header, header, ...>)
+  Validates that only this set of headers exists and no others. Header values are not examined, only header names (case-insensitive). Set must be surrounded by paranthesis.
+
+VALIDATE_RAW_RESPONSE
+
+VALIDATE_RESPONSE [xsl_file]
+  Only specified after a GET_*, or POST_* command when an xsl file other than the standard 'response.xsl' is needed.
+
+CommandLine Parameters
+======================
+To run one test use -Dtc=testID
+To run a set of request files use -Dfilelist="myrequestfile1.req,myrequestfile2.req"
+To exclude a set of request files use -Dexcludefilelist="myrequestfile1.req,myrequestfile2.req"
+To specify a property file use -Dpropfile="properties fname", no extension
+To specify a branch against which your tests will executed, specify -Dbranch=<exact branch name>, case sensitive. 
+To specify a subdirectory that contains req files use -Dtest.dir=mydir for example -Dtest.dir=silo where silo is a subdirectory of data/infogroup
