@@ -10,7 +10,7 @@
     <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson.version>2.6.1</jackson.version>
+        <jackson.version>2.8.11</jackson.version>
         <jackson.asl.version>1.9.13</jackson.asl.version>
     </properties>
     <repositories>
@@ -207,7 +207,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.3.1</version>
+            <version>4.3.6</version>
         </dependency>
         <dependency>
             <groupId>org.milyn</groupId>
