@@ -6,4 +6,5 @@ mvn install:install-file -Dfile=ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojd
 
 To Install Teradata Drivers
 mvn install:install-file -Dfile=terajdbc4.jar -DgroupId=com.teradata.jdbc -DartifactId=terajdbc4 -Dversion=16.20.00.08 -Dpackaging=jar
+
 mvn install:install-file -Dfile=tdgssconfig.jar -DgroupId=com.teradata.jdbc -DartifactId=tdgssconfig -Dversion=16.20.00.08 -Dpackaging=jar
